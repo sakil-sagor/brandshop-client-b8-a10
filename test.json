@@ -1,0 +1,19 @@
+{
+    "_id": {
+        "$oid": "61901670bad421096ad1722e"
+    },
+    "InStock": true,
+    "WaterResistance": "3 ATM",
+    "Warranty": "1 Year Brand Warranty (For detail, please see warratny information page under help center)",
+    "img": "https://i.ibb.co/7nssqzL/12.png",
+    "description": "Body: Aluminum alloy Bottom Shell: Plastic Buttons: 1 button Waterproofing Grade: 5 ATM Material: AMOLED Size: 1.65 inches Resolution: 348 x 442",
+    "CaseMetal": "STAINLESS STEEL",
+    "DisplayType": "Analog",
+    "color": "Golden",
+    "Gender": "Male & Female",
+    "rating": "4.3",
+    "price": "4150",
+    "model": "Casio",
+    "productName": "Ca-Ultra-Smart-P7",
+    "Category": "watch"
+}

@@ -19,8 +19,11 @@ const Navbar = () => {
     const [open, setOpen] = useState(true)
     const routes = [
         { id: 1, path: '/', name: 'Home' },
+        { id: 2, path: '/product', name: 'Product' },
+        { id: 3, path: '/myCart', name: 'My-Cart' },
+        { id: 4, path: '/addProduct', name: 'Add-Product' },
+        { id: 5, path: '/addBrand', name: 'Add-Brand' },
 
-        { id: 2, path: '/contactUs', name: 'Contact-Us' },
 
 
 
