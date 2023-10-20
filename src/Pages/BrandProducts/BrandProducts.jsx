@@ -12,24 +12,41 @@ const BrandProducts = () => {
         const url = `http://localhost:5000/brands/${_id}`
         fetch(url)
             .then(res => res.json())
-            .then(data => setProducts(data))
-        setLoading(false)
+            .then(data => {
+                setProducts(data)
+                setLoading(false)
+            }
+            )
+
     }, []);
 
     return (
 
         <div className="container mx-auto px-2 min-h-screen">
             <div className="my-8">
-
                 {
-                    loading ? <Loading></Loading>
+                    loading ?
+                        <Loading></Loading>
                         :
-                        <div className="grid grid-cols-4 gap-6">
+                        <div>
                             {
+                                products.length == 0 ?
+                                    <div className="mt-32 font-bold text-2xl text-center  text-blue-500">
+                                        <h2 className="text-4xl mb-4 text-red-700">Opps! </h2>
+                                        <h2>There are no any Product under this Brand.</h2>
+                                    </div>
+                                    :
 
-                                products.map(product =>
-                                    <SingleProduct key={product._id} product={product} ></SingleProduct>
-                                )
+                                    <div className="grid grid-cols-4 gap-6">
+
+
+                                        {
+                                            products.map(product =>
+                                                <SingleProduct key={product._id} product={product} ></SingleProduct>
+                                            )
+                                        }
+
+                                    </div>
                             }
                         </div>
                 }

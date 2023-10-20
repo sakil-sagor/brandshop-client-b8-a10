@@ -10,7 +10,7 @@ const SingleBrands = ({ brand }) => {
                     <img className="w-2/3 mx-auto" src={image} alt="" />
                 </div>
                 <div>
-                    <h3>{brandName}</h3>
+                    {/* <h3>{brandName}</h3> */}
                 </div>
             </div>
         </Link>
