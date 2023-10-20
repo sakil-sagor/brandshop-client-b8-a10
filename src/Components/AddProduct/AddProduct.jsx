@@ -73,7 +73,7 @@ const AddProduct = () => {
 
         console.log(formData)
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://assten-server.vercel.app/products', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

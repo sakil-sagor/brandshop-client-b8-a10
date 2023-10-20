@@ -9,7 +9,7 @@ const BrandProducts = () => {
     const { _id } = useParams();
     useEffect(() => {
         setLoading(true)
-        const url = `http://localhost:5000/brands/${_id}`
+        const url = `https://assten-server.vercel.app/brands/${_id}`
         fetch(url)
             .then(res => res.json())
             .then(data => {

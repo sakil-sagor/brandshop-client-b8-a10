@@ -63,7 +63,7 @@ const AddBrands = () => {
         const imageUrl = await uploadImageToImgBB(imageFile);
         formData.image = imageUrl;
 
-        fetch('http://localhost:5000/brands', {
+        fetch('https://assten-server.vercel.app/brands', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

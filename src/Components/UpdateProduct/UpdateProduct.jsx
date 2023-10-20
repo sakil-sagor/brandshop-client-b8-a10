@@ -95,7 +95,7 @@ const UpdateProduct = () => {
         }
         console.log(formData)
         // Replace this with your API endpoint to update the product data
-        fetch(`http://localhost:5000/products/${_id}`, {
+        fetch(`https://assten-server.vercel.app/products/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

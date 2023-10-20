@@ -20,7 +20,7 @@ const DetailsProduct = () => {
 
         orderDetails = { ...orderDetails, email: user.email, id: _id }
         console.log(orderDetails)
-        fetch('http://localhost:5000/addToCart', {
+        fetch('https://assten-server.vercel.app/addToCart', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

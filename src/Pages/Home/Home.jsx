@@ -2,12 +2,16 @@
 
 import AllBrands from '../../Components/AllBrands/AllBrands';
 import AllProducts from '../../Components/AllProducts/AllProducts';
+import Banner from '../../Components/Banner/Banner';
 import LocationFind from '../../Components/LocationFind/LocationFind';
 
 const Home = () => {
 
     return (
         <div>
+            <div className='container mx-auto px-2 my-16'>
+                <Banner></Banner>
+            </div>
             <div className='container mx-auto px-2 my-16'>
                 <AllBrands></AllBrands>
             </div>

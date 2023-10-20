@@ -12,7 +12,7 @@ const AddToCart = () => {
 
     useEffect(() => {
         setLoading(true)
-        const url = `http://localhost:5000/addToCart?email=${user?.email}`
+        const url = `https://assten-server.vercel.app/addToCart?email=${user?.email}`
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -25,9 +25,9 @@ const AddToCart = () => {
     const handelCancel = (id) => {
 
         console.log(id)
-        let link = `http://localhost:5000/addToCart?email=${user?.email}&&id=${id}`
+        let link = `https://assten-server.vercel.app/addToCart?email=${user?.email}&&id=${id}`
         console.log(link)
-        fetch(`http://localhost:5000/addToCart?email=${user?.email}&&id=${id}`, {
+        fetch(`https://assten-server.vercel.app/addToCart?email=${user?.email}&&id=${id}`, {
             method: "DELETE",
         })
             .then(res => res.json())
