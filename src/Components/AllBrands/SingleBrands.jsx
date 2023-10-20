@@ -5,9 +5,9 @@ const SingleBrands = ({ brand }) => {
     const { brandName, image, _id } = brand;
     return (
         <Link to={`brand/${_id}`}>
-            <div className="flex iteam-center justify-center border shadow-xl">
-                <div>
-                    <img className="w-32" src={image} alt="" />
+            <div className="flex flex-col iteam-center justify-center items-center border shadow-xl h-64 rounded">
+                <div className="w-full ">
+                    <img className="w-2/3 mx-auto" src={image} alt="" />
                 </div>
                 <div>
                     <h3>{brandName}</h3>

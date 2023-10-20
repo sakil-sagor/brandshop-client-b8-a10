@@ -114,7 +114,7 @@ const AddProduct = () => {
                     <div className='bg-blue-50 '>
                         <div className=' '>
                             <div className=" border shadow-md shadow-blue-300 px-2 py-6 md:p-8 text-center rounded-md">
-                                <h2 className='text-2xl font-bold text-blue-700'>Add Teacher Detials</h2>
+                                <h2 className='text-2xl font-bold text-blue-700'>Add Products Detials</h2>
                             </div>
                             <div className=' mt-4 '>
 
