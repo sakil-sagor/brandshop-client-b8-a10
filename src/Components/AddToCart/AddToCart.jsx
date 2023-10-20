@@ -68,7 +68,7 @@ const AddToCart = () => {
                                 <h1 className="text-center text-2xl text-indigo-900 font-semibold mb-12">Oops! You Have no any Cart Products.</h1>
                                 <div className="mt-24">
                                     <h1 className="text-center text-2xl text-indigo-900 font-semibold mb-12">Want to make some Shop...?   </h1>
-                                    <p className="text-center"><NavLink className="transition duration-500 bg-indigo-900 text-white px-10 py-3 rounded font-semibold hover:text-indigo-900 hover:bg-white  d-button-solid border hover:border-indigo-900" to='/shop'>Shop Now</NavLink></p>
+                                    <p className="text-center"><NavLink className="transition duration-500 bg-indigo-900 text-white px-10 py-3 rounded font-semibold hover:text-indigo-900 hover:bg-white  d-button-solid border hover:border-indigo-900" to='/'>Shop Now</NavLink></p>
                                 </div>
                             </div>
 

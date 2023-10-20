@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
+import logo from "../../assets/logo.png";
 import pro1 from "../../assets/pro1.png";
 import LinkBar from "./LinkBar";
 import ProfileShortcut from "./ProfileShortcut";
@@ -22,7 +23,7 @@ const Navbar = () => {
         { id: 2, path: '/product', name: 'Product' },
         { id: 3, path: '/myCart', name: 'My-Cart' },
         { id: 4, path: '/addProduct', name: 'Add-Product' },
-        { id: 5, path: '/addBrand', name: 'Add-Brand' },
+
 
 
 
@@ -46,8 +47,9 @@ const Navbar = () => {
         <div className='   sticky top-0 border-b shadow-lg shadow-blue-200 bg-blue-50 z-[9999]'>
             <div className='py-4 container mx-auto px-2'>
                 <div className='flex justify-between items-center'>
-                    <div>
-                        <h1 className='block text-4xl text-blue-600 font-bold ami'>I-Dream</h1>
+                    <div className="flex items-center gap-x-2">
+                        <img className="rounded-md w-16" src={logo} alt="" />
+                        <h1 className='block text-4xl text-blue-600 font-bold'>I-Dream</h1>
 
 
 
