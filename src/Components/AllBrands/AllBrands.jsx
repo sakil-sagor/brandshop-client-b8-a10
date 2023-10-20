@@ -8,7 +8,7 @@ const AllBrands = () => {
 
     return (
         <div className="mt-8">
-            <div className="mx-auto text-center mb-6">
+            <div className="mx-auto text-center my-12">
                 <h2 className="text-4xl font-bold text-blue-600">Our Top Brands</h2>
                 <br />
                 <hr className=" w-1/6 text-center mx-auto" />

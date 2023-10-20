@@ -9,17 +9,18 @@ const Home = () => {
 
     return (
         <div>
-            <div className='container mx-auto px-2 my-16'>
+            <div>
                 <Banner></Banner>
             </div>
-            <div className='container mx-auto px-2 my-16'>
+            <div className='container mx-auto px-2 my-24'>
                 <AllBrands></AllBrands>
             </div>
-            <div className='container mx-auto px-2 my-16'>
+            <hr />
+            <div className='container mx-auto px-2 my-24'>
                 <AllProducts></AllProducts>
             </div>
-
-            <div className='container mx-auto px-2 my-16'>
+            <hr />
+            <div className='container mx-auto px-2 my-24'>
                 <LocationFind></LocationFind>
             </div>
 

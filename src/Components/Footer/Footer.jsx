@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 const Footer = () => {
     return (
         <div className="bg-blue-900 pt-10  ">
@@ -8,9 +9,12 @@ const Footer = () => {
                     {/* left section  */}
                     <div className="col-sapn- ">
                         <Link to="/home">
-                            <h1 className="text-2xl font-bold text-white "> <span className="text-blue-300">I-Dream</span> Event Park  </h1>
+                            <div className="flex items-center">
+                                <img className="rounded-md w-16 mr-2" src={logo} alt="" />
+                                <h1 className="text-2xl font-bold text-white "> <span className="text-blue-300">I-Dream</span>   </h1>
+                            </div>
                         </Link>
-                        <p className="py-8 text-white font-semibold">Join our free campaign and give the gift of life!Contact us today to start crafting your bespoke event that will leave a lasting impression on you and your guests..Join us today and help make a positive impact in your community!</p>
+                        <p className="py-8 text-white font-semibold">Take our free delivery and found the gift of life!Contact us today to start crafting your bespoke event that will leave a lasting impression on you and your guests..Join us today and help make a positive impact in your community!</p>
 
                     </div>
                     {/* middle section */}
