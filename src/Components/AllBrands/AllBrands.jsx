@@ -5,7 +5,7 @@ import SingleBrands from "./SingleBrands";
 const AllBrands = () => {
 
     const [brands] = useBrands();
-    console.log(brands)
+
     return (
         <div className="mt-8">
             <div className="grid grid-cols-3 gap-6">

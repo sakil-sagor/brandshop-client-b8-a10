@@ -10,7 +10,7 @@ import ProfileShortcut from "./ProfileShortcut";
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
     const [profileState, setProfileState] = useState('Off');
-    console.log(user)
+    // console.log(user)
     const handleSignOut = () => {
         logOut()
             .then()

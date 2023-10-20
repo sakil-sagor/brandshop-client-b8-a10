@@ -109,7 +109,7 @@ const AddProduct = () => {
 
     return (
         <div className='bg-blue-50 min-h-screen'>
-            <div className='full-width-all pt-4  pb-24 '>
+            <div className=' pt-4  pb-24 '>
                 <div className='w-full md:2/4 lg:w-2/4 m-auto pt-12'>
                     <div className='bg-blue-50 '>
                         <div className=' '>

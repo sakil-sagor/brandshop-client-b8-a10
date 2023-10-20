@@ -4,9 +4,9 @@ import SingleProduct from "./SingleProduct";
 
 const AllProducts = () => {
     const [products] = useProducts();
-    console.log(products)
+
     return (
-        <div className="mt-8">
+        <div className="my-8 min-h-screen container mx-auto px-2">
             <div className="grid grid-cols-4 gap-6">
                 {
                     products.map(product =>

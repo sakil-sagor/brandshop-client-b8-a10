@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const SingleBrands = ({ brand }) => {
     const { brandName, image, _id } = brand;
     return (
-        <Link to={`brand/:${_id}`}>
+        <Link to={`brand/${_id}`}>
             <div className="flex iteam-center justify-center border shadow-xl">
                 <div>
                     <img className="w-32" src={image} alt="" />
