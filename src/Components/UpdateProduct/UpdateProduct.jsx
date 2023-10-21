@@ -23,6 +23,7 @@ const UpdateProduct = () => {
         price: '',
         rating: '',
         description: '',
+        discount: '',
         image: ''
 
     });
@@ -208,26 +209,52 @@ const UpdateProduct = () => {
                                                 Rating
                                             </label>
 
-                                            <select
-                                                className='py-1 px-2 w-full text-center rounded-md border border-gray-300'
+                                            <input
+                                                className='py-1 px-2 w-full rounded-md border border-gray-300'
+                                                type="number" step="0.01"
 
                                                 name="rating"
-
+                                                min="0" max="5"
+                                                placeholder="Your rating ( 0 - 5 )"
                                                 value={formData?.rating}
                                                 onChange={handleInputChange}
-                                            >
-                                                <option className='' value='' disabled selected>--Select Type--</option>
-                                                <option value='1'>1 </option>
-                                                <option value='2'>2 </option>
-                                                <option value='3'>3 </option>
-                                                <option value='4'>4 </option>
-                                                <option value='5'>5 </option>
 
-
-                                            </select>
+                                            />
                                         </div>
                                     </div>
+                                    <div className='flex space-x-4 justify-between mt-2'>
 
+                                        <div className='w-1/2'>
+                                            <label className=' text-gray-600 font-semibold block  ' for='image'>
+                                                Image
+                                            </label>
+                                            <input
+                                                id='image'
+                                                className='py-1 px-2 rounded-md'
+                                                type="file"
+                                                accept="image/*"
+
+                                                onChange={handleImageUpload}
+                                            />
+                                        </div>
+                                        <div className='w-1/2'>
+                                            <label className=' text-gray-600 font-semibold block ' htmlFor='discount'>
+                                                Discount (0-100)%
+                                            </label>
+
+                                            <input
+                                                className='py-1 px-2 w-full rounded-md border border-gray-300'
+                                                type="number" step="1"
+
+                                                name="discount"
+                                                min="0" max="100"
+                                                placeholder=" Discount ( 0 - 100 )"
+                                                value={formData?.discount}
+                                                onChange={handleInputChange}
+
+                                            />
+                                        </div>
+                                    </div>
                                     <div className='flex flex-col w-full mt-2'>
                                         <label className=' text-gray-600 font-semibold block ' for='description'>
                                             Description
@@ -246,17 +273,7 @@ const UpdateProduct = () => {
                                         ></textarea>
                                     </div>
                                     <div className='flex flex-col w-full mt-2'>
-                                        <label className=' text-gray-600 font-semibold block  ' for='image'>
-                                            Image
-                                        </label>
-                                        <input
-                                            id='image'
-                                            className='py-1 px-2 rounded-md'
-                                            type="file"
-                                            accept="image/*"
 
-                                            onChange={handleImageUpload}
-                                        />
                                     </div>
                                     <div className=' mt-4 '>
                                         <div className='flex items-center justify-center h-10  bg-indigo-500 rounded'>
@@ -265,7 +282,7 @@ const UpdateProduct = () => {
                                             </button>
                                             <button className={`w-full h-full  text-white py-18 ${loading && "hidden"}`}>
                                                 <span  >
-                                                    Add Product
+                                                    Update Product
                                                 </span>
                                             </button>
                                         </div>

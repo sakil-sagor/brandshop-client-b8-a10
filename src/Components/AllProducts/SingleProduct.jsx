@@ -6,7 +6,9 @@ import { AuthContext } from '../../Context/AuthProvider';
 
 const SingleProduct = ({ product }) => {
     const { darkMode } = useContext(AuthContext);
-    const { brandName, image, description, type, _id, productName, price, rating } = product;
+    const { brandName, image, discount, type, _id, productName, price, rating } = product;
+
+
     return (
         <div className={`flex  flex-col h-full  shadow-xl hover:shadow-2xl duration-200   rounded-md relative ${darkMode ? "bg-gray-400" : "bg-pink-50"}`}>
             <div className='w-full flex-grow'>
@@ -36,8 +38,11 @@ const SingleProduct = ({ product }) => {
                     <Link to={`/updateProduct/${_id}`} >  <button className='bg-blue-700 hover:bg-transparent border hover:text-blue-700 border-blue-700 duration-200 text-white py-1 w-full rounded'>Update</button></Link>
                 </div>
             </div>
-            <div className='absolute bg-black text-white px-1 rounded py-1 '>
-                <p>{type}</p>
+            <div className='absolute  text-white flex justify-between w-full'>
+                <p className='bg-pink-700  px-1 rounded py-1 '>{type}</p>
+                <p className='text-pink-900 font-bold  px-1 rounded py-1 '>{product?.discount ? product?.discount + "%" : " "}</p>
+
+
             </div>
         </div>
     );

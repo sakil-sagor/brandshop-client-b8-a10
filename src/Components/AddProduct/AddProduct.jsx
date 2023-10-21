@@ -17,6 +17,7 @@ const AddProduct = () => {
         price: '',
         rating: '',
         description: '',
+        discount: '',
         image: ''
 
     });
@@ -94,6 +95,7 @@ const AddProduct = () => {
                     price: '',
                     rating: '',
                     description: '',
+                    discount: '',
                     image: ''
                 });
 
@@ -200,7 +202,7 @@ const AddProduct = () => {
                                         </div>
                                         <div className='w-1/2'>
                                             <label className=' text-gray-600 font-semibold block  ' for='rating'>
-                                                Rating
+                                                Rating (0-5 )
                                             </label>
 
                                             {/* <select
@@ -235,6 +237,53 @@ const AddProduct = () => {
                                         </div>
                                     </div>
 
+
+                                    <div className='flex space-x-4 justify-between mt-2'>
+
+                                        <div className='w-1/2'>
+                                            <label className=' text-gray-600 font-semibold block  ' for='image'>
+                                                Image
+                                            </label>
+                                            <input
+                                                id='image'
+                                                className='py-1 px-2 rounded-md'
+                                                type="file"
+                                                accept="image/*"
+
+                                                onChange={handleImageUpload}
+                                            />
+                                        </div>
+                                        <div className='w-1/2'>
+                                            <label className=' text-gray-600 font-semibold block ' htmlFor='discount'>
+                                                Discount (0-100)%
+                                            </label>
+
+                                            <input
+                                                className='py-1 px-2 w-full rounded-md border border-gray-300'
+                                                type="number" step="1"
+
+                                                name="discount"
+                                                min="0" max="100"
+                                                placeholder=" Discount ( 0 - 100 )"
+                                                value={formData.discount}
+                                                onChange={handleInputChange}
+
+                                            />
+                                        </div>
+                                    </div>
+                                    {/* <div className='flex flex-col w-full mt-2'>
+                                        <label className=' text-gray-600 font-semibold block  ' for='image'>
+                                            Image
+                                        </label>
+                                        <input
+                                            id='image'
+                                            className='py-1 px-2 rounded-md'
+                                            type="file"
+                                            accept="image/*"
+
+                                            onChange={handleImageUpload}
+                                        />
+                                    </div> */}
                                     <div className='flex flex-col w-full mt-2'>
                                         <label className=' text-gray-600 font-semibold block ' for='description'>
                                             Description
@@ -251,20 +300,6 @@ const AddProduct = () => {
                                             onChange={handleInputChange}
 
                                         ></textarea>
-                                    </div>
-
-                                    <div className='flex flex-col w-full mt-2'>
-                                        <label className=' text-gray-600 font-semibold block  ' for='image'>
-                                            Image
-                                        </label>
-                                        <input
-                                            id='image'
-                                            className='py-1 px-2 rounded-md'
-                                            type="file"
-                                            accept="image/*"
-
-                                            onChange={handleImageUpload}
-                                        />
                                     </div>
                                     <div className=' mt-4 '>
                                         <div className='flex items-center justify-center h-10  bg-indigo-500 rounded'>

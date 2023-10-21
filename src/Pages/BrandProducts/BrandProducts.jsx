@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import BrandAdSlider from "../../Components/AllBrands/BrandAdSlider";
 import SingleProduct from "../../Components/AllProducts/SingleProduct";
 import Loading from "../../Components/Loading/Loading";
 
@@ -20,6 +21,9 @@ const BrandProducts = () => {
 
     }, []);
 
+
+    const advertisementProduct = products.filter(product => parseInt(product?.discount) !== 0)
+    console.log(advertisementProduct)
     return (
 
         <div className="container mx-auto px-2 min-h-screen">
@@ -36,17 +40,22 @@ const BrandProducts = () => {
                                         <h2>There are no any Product under this Brand.</h2>
                                     </div>
                                     :
+                                    <div>
+                                        <div>
+                                            <BrandAdSlider advertisementProduct={(advertisementProduct)}></BrandAdSlider>
+                                        </div>
+                                        <div className="grid grid-cols-4 gap-6">
 
-                                    <div className="grid grid-cols-4 gap-6">
 
+                                            {
+                                                products.map(product =>
+                                                    <SingleProduct key={product._id} product={product} ></SingleProduct>
+                                                )
+                                            }
 
-                                        {
-                                            products.map(product =>
-                                                <SingleProduct key={product._id} product={product} ></SingleProduct>
-                                            )
-                                        }
-
+                                        </div>
                                     </div>
+
                             }
                         </div>
                 }
