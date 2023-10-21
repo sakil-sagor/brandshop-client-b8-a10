@@ -9,7 +9,8 @@ import ProfileShortcut from "./ProfileShortcut";
 
 
 const Navbar = () => {
-    const { user, logOut } = useContext(AuthContext);
+    const { user, logOut, darkMode } = useContext(AuthContext);
+
     const [profileState, setProfileState] = useState('Off');
     // console.log(user)
     const handleSignOut = () => {
@@ -37,7 +38,7 @@ const Navbar = () => {
         setProfileState((state) => (state === "On" ? "Off" : "On"));
     };
     return (
-        <div className='   sticky top-0 border-b shadow-lg shadow-blue-200 bg-blue-50 z-[9999]'>
+        <div className={` sticky top-0 border-b shadow-lg shadow-blue-200  z-[9999] ${darkMode ? "bg-gray-500 text-white" : "bg-blue-50 text-black"}`}>
             <div className='py-4 container mx-auto px-2'>
                 <div className='flex justify-between items-center'>
                     <div className="flex items-center gap-x-2">
@@ -47,6 +48,7 @@ const Navbar = () => {
                         <h1 className='block text-4xl text-blue-600 font-bold'>I-Dream</h1>
                     </div>
                     <div>
+
                         <ul className=' hidden md:flex'>
                             {
                                 routes.map(route => (

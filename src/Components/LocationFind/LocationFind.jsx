@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import { AiFillPhone, AiTwotoneMail, } from "react-icons/ai";
 import { FaLocationPin } from "react-icons/fa6";
+import { AuthContext } from "../../Context/AuthProvider";
 import TopSection from "../TopSection/TopSection";
 
 const LocationFind = () => {
+    const { darkMode } = useContext(AuthContext);
     return (
         <div>
 
@@ -13,26 +16,26 @@ const LocationFind = () => {
                             <TopSection headline={"Find us on here..."}></TopSection>
                         </div>
                         <div className="flex items-center my-4">
-                            <FaLocationPin className="text-pink-600 text-3xl mr-2"></FaLocationPin>
+                            <FaLocationPin className={` text-3xl mr-2 ${darkMode ? "text-white" : "text-pink-600"}`}  ></FaLocationPin>
                             <div>
-                                <p className="font-semibold text-blue-800 text-lg">  Location: </p>
-                                <p className="text-pink-600">Haybatnagar, Kishoreganj sadar, Kihsoreganj</p>
+                                <p className={` font-semibold  text-lg ${darkMode ? "text-white" : "text-blue-800"}`} >  Location: </p>
+                                <p className={`${darkMode ? "text-white" : "text-pink-600"}`}>Haybatnagar, Kishoreganj sadar, Kihsoreganj</p>
                             </div>
                         </div>
                         <hr />
                         <div className="flex items-center my-4">
-                            <AiFillPhone className="text-pink-600 text-3xl mr-2"></AiFillPhone>
+                            <AiFillPhone className={` text-3xl mr-2 ${darkMode ? "text-white" : "text-pink-600"}`} ></AiFillPhone>
                             <div>
-                                <p className="font-semibold text-blue-800 text-lg">  Call Us: </p>
-                                <p className="text-pink-600">017123456789,0123456789</p>
+                                <p className={` font-semibold  text-lg ${darkMode ? "text-white" : "text-blue-800"}`} >  Call Us: </p>
+                                <p className={`${darkMode ? "text-white" : "text-pink-600"}`}>017123456789,0123456789</p>
                             </div>
                         </div>
                         <hr />
                         <div className="flex items-center my-4">
-                            <AiTwotoneMail className="text-pink-600 text-3xl mr-2"></AiTwotoneMail>
+                            <AiTwotoneMail className={` text-3xl mr-2 ${darkMode ? "text-white" : "text-pink-600"}`} ></AiTwotoneMail>
                             <div>
-                                <p className="font-semibold text-blue-800 text-lg">  Mail Us: </p>
-                                <p className="text-pink-600">info@management.com</p>
+                                <p className={` font-semibold  text-lg ${darkMode ? "text-white" : "text-blue-800"}`} > Mail Us: </p>
+                                <p className={`${darkMode ? "text-white" : "text-pink-600"}`}>info@management.com</p>
                             </div>
                         </div>
                         <hr />

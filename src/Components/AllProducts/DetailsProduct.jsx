@@ -49,7 +49,7 @@ const DetailsProduct = () => {
     return (
         <div className="container mx-auto px-2 min-h-screen">
             <div className="my-12">
-                <div className="grid grid-cols-2 gap-x-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="border ">
                         <img className="rounded" src={singleProduct?.image} alt="" />
                     </div>

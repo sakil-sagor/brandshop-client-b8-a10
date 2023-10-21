@@ -5,3 +5,10 @@
     background-size: cover;
 
 }
+
+.all-esist-area {
+    background-image: linear-gradient(rgba(1, 39, 56, 0.45), #0b1011e8), url(../../assets/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,16 +1,18 @@
+import { useContext } from "react";
+import { AuthContext } from "../../Context/AuthProvider";
 import useBrands from "../../Hooks/useBrands";
 import Loading from "../Loading/Loading";
 import SingleBrands from "./SingleBrands";
 
 
 const AllBrands = () => {
-
+    const { darkMode } = useContext(AuthContext);
     const [brands] = useBrands();
 
     return (
-        <div className="mt-8">
+        <div className={`mt-8 ${darkMode && "bg-gray-500"}`} >
             <div className="mx-auto text-center my-12">
-                <h2 className="text-4xl font-bold text-blue-600">Our Top Brands</h2>
+                <h2 className={`text-4xl font-bold ${darkMode ? "text-white" : "text-blue-600"}`}>Our Top Brands</h2>
                 <br />
                 <hr className=" w-1/6 text-center mx-auto" />
             </div>

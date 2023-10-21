@@ -21,13 +21,10 @@
 
 > Adhering to high ethical and moral standards at all times.
  
-> Making service quality top priority in all we do.
-> 
-> We have a lot of year's experience.
-> 
+> Making service quality top priority in all we do. 
+ 
 > Providing quality product care service in all processes
-> 
+ 
 > Delivering customer satisfaction through quality service
 
-> Delivering customer satisfaction through quality service
 

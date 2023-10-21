@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../Context/AuthProvider';
 
 // Emergency page for home  
 
 const Emergency = () => {
+    const { darkMode } = useContext(AuthContext);
     return (
         <div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-4 text-white ">
+            <div className={`grid sm:grid-cols-2 md:grid-cols-4 ${darkMode ? "text-gray-700" : "text-white"}`}>
                 <div className="bg-green-600 py-16  text-center flex justify-center	items-center " >
                     <div className="hover:text-gray-800 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110	">
                         <i class="fas fa-phone mr-2 text-4xl"></i>

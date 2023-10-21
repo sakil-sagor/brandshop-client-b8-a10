@@ -41,13 +41,22 @@ const AuthProvider = ({ children }) => {
         }
     }, [])
 
+    const [darkMode, setDarkMode] = useState(false);
+
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };
+
     const authInfo = {
         user,
         loading,
         createUser,
         googleLogin,
         signIn,
-        logOut
+        logOut,
+        darkMode,
+        toggleDarkMode
+
     }
 
     return (
