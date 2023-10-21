@@ -17,6 +17,7 @@ const AddToCart = () => {
             .then(res => res.json())
             .then(data => {
                 setCarts(data)
+                console.log(data)
                 setLoading(false)
             })
 
@@ -41,7 +42,7 @@ const AddToCart = () => {
     }
 
 
-
+    console.log(carts)
     return (
         <div>
 
@@ -80,7 +81,7 @@ const AddToCart = () => {
                                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-2">
 
                                             {
-                                                carts.map(cart => <SingleCartProduct key={cart._id} cart={cart} handelCancel={handelCancel}></SingleCartProduct>)
+                                                carts.map(cart => <SingleCartProduct key={cart?._id} cart={cart} handelCancel={handelCancel}></SingleCartProduct>)
                                             }
                                         </div>
                                     </div>

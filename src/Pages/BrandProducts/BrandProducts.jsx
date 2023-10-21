@@ -22,7 +22,7 @@ const BrandProducts = () => {
     }, []);
 
 
-    const advertisementProduct = products.filter(product => parseInt(product?.discount) !== 0)
+    const advertisementProduct = products.filter(product => parseInt(product?.discount) > 0)
     console.log(advertisementProduct)
     return (
 
@@ -41,10 +41,10 @@ const BrandProducts = () => {
                                     </div>
                                     :
                                     <div>
-                                        <div>
+                                        <div className="bg-blue-100">
                                             <BrandAdSlider advertisementProduct={(advertisementProduct)}></BrandAdSlider>
                                         </div>
-                                        <div className="grid grid-cols-4 gap-6">
+                                        <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
 
 
                                             {

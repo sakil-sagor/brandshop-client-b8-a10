@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import AllArea from '../../Components/AllArea/AllArea';
 import AllBrands from '../../Components/AllBrands/AllBrands';
-import AllProducts from '../../Components/AllProducts/AllProducts';
+import BestSellingProduct from '../../Components/BestSellingProduct/BestSellingProduct';
 import DarkLightModeToggle from '../../Components/DarkLightModeToggle/DarkLightModeToggle';
 import Emergency from '../../Components/Emergency';
 import HeroArea from '../../Components/HeroArea/HeroArea';
@@ -31,7 +31,7 @@ const Home = () => {
                     <br />
                     <hr className=" w-1/6 text-center mx-auto" />
                 </div>
-                <AllProducts></AllProducts>
+                <BestSellingProduct></BestSellingProduct>
             </div>
             <hr />
             <div>
