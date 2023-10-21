@@ -40,7 +40,7 @@ const SingleProduct = ({ product }) => {
             </div>
             <div className='absolute  text-white flex justify-between w-full'>
                 <p className='bg-pink-700  px-1 rounded py-1 '>{type}</p>
-                <p className='text-pink-900 font-bold  px-1 rounded py-1 '>{product?.discount > 0 ? product?.discount + "%" : " "}</p>
+                <p className='text-pink-900 font-bold  px-1 rounded py-1 '>{product?.discount > 0 ? product?.discount + "% off" : " "}</p>
 
 
             </div>

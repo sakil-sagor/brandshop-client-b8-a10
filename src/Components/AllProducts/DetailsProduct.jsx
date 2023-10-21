@@ -94,13 +94,19 @@ const DetailsProduct = () => {
                                 <button onClick={addToCart} className='bg-blue-500 hover:bg-transparent border hover:text-blue-500 border-blue-500 duration-200 text-white py-1 px-2 rounded'>Add to Cart</button>
                             </div>
                         </div>
-                        {/* <div className="mt-4">
-                            <p>{singleProduct?.description.split(" ").slice(0, 50).join(" ")}...</p>
-                        </div> */}
+
                     </div>
                 </div>
-                <div className="mt-4">
-                    <p>{singleProduct?.description}</p>
+                <div className="p-4 border mt-4">
+                    <div className="mt-4 bg-gray-200 p-3 rounded">
+                        <p>{singleProduct?.description.split(" ").slice(0, 50).join(" ")}...</p>
+                    </div>
+                    <div className="mt-4 bg-gray-200 p-3 rounded">
+                        <p>{singleProduct?.description.split(" ").slice(50, 150).join(" ")}...</p>
+                    </div>
+                    <div className="mt-4 bg-gray-200 p-3 rounded">
+                        <p>{singleProduct?.description.split(" ").slice(150, 5000).join(" ")}...</p>
+                    </div>
                 </div>
             </div>
             <ToastContainer
