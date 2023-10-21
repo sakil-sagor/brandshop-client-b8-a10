@@ -203,7 +203,7 @@ const AddProduct = () => {
                                                 Rating
                                             </label>
 
-                                            <select
+                                            {/* <select
                                                 className='py-1 px-2 w-full text-center rounded-md border border-gray-300'
 
                                                 name="rating"
@@ -219,7 +219,19 @@ const AddProduct = () => {
                                                 <option value='5'>5 </option>
 
 
-                                            </select>
+                                            </select> */}
+                                            <input
+                                                className='py-1 px-2 w-full rounded-md border border-gray-300'
+                                                type="number" step="0.01"
+
+                                                name="rating"
+                                                min="0" max="5"
+                                                placeholder="Your rating ( 0 - 5 )"
+                                                value={formData.rating}
+                                                onChange={handleInputChange}
+
+                                            />
+
                                         </div>
                                     </div>
 
@@ -240,6 +252,7 @@ const AddProduct = () => {
 
                                         ></textarea>
                                     </div>
+
                                     <div className='flex flex-col w-full mt-2'>
                                         <label className=' text-gray-600 font-semibold block  ' for='image'>
                                             Image

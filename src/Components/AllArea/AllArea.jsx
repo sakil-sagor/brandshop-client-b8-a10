@@ -18,7 +18,7 @@ const AllArea = () => {
                             Our goal is to deliver quality of care in a courteous, respectful, and compassionate manner. We hope you will allow us to care for you and strive to be the first and best choice for Life.
                         </p>
                     </div>
-                    <div className="py-4  ">
+                    <div className={`py-4  text-white   `}>
                         <div className="w-full ">
                             <div className="  w-full block bg-pink-500 py-4 px-5 rounded-lg duration-500 text-xl font-semibold hover:bg-pink-700" > Shop Now<i class="fas fa-arrow-right ml-2"></i></div>
                         </div>
