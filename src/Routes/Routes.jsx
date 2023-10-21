@@ -43,7 +43,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/brand/:_id",
-                element: <PrivateRoute><BrandProducts></BrandProducts></PrivateRoute>
+                element: <BrandProducts></BrandProducts>
             },
             {
                 path: "/updateProduct/:_id",
