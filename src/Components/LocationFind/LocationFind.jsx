@@ -15,7 +15,7 @@ const LocationFind = () => {
                         <div className="flex items-center my-4">
                             <FaLocationPin className="text-pink-600 text-3xl mr-2"></FaLocationPin>
                             <div>
-                                <p className="font-semibold text-green-800 text-lg">  Location: </p>
+                                <p className="font-semibold text-blue-800 text-lg">  Location: </p>
                                 <p className="text-pink-600">Haybatnagar, Kishoreganj sadar, Kihsoreganj</p>
                             </div>
                         </div>
@@ -23,7 +23,7 @@ const LocationFind = () => {
                         <div className="flex items-center my-4">
                             <AiFillPhone className="text-pink-600 text-3xl mr-2"></AiFillPhone>
                             <div>
-                                <p className="font-semibold text-green-800 text-lg">  Call Us: </p>
+                                <p className="font-semibold text-blue-800 text-lg">  Call Us: </p>
                                 <p className="text-pink-600">017123456789,0123456789</p>
                             </div>
                         </div>
@@ -31,7 +31,7 @@ const LocationFind = () => {
                         <div className="flex items-center my-4">
                             <AiTwotoneMail className="text-pink-600 text-3xl mr-2"></AiTwotoneMail>
                             <div>
-                                <p className="font-semibold text-green-800 text-lg">  Mail Us: </p>
+                                <p className="font-semibold text-blue-800 text-lg">  Mail Us: </p>
                                 <p className="text-pink-600">info@management.com</p>
                             </div>
                         </div>

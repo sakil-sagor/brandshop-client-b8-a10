@@ -1,4 +1,5 @@
 import useBrands from "../../Hooks/useBrands";
+import Loading from "../Loading/Loading";
 import SingleBrands from "./SingleBrands";
 
 
@@ -13,13 +14,20 @@ const AllBrands = () => {
                 <br />
                 <hr className=" w-1/6 text-center mx-auto" />
             </div>
-            <div className="grid grid-cols-2  lg:grid-cols-3 gap-6">
-                {
-                    brands.map(brand =>
-                        <SingleBrands key={brand._id} brand={brand}></SingleBrands>
-                    )
-                }
-            </div>
+            {
+                !brands?.length ?
+                    <Loading></Loading>
+                    :
+
+
+                    <div className="grid grid-cols-2  lg:grid-cols-3 gap-6">
+                        {
+                            brands.map(brand =>
+                                <SingleBrands key={brand._id} brand={brand}></SingleBrands>
+                            )
+                        }
+                    </div>
+            }
         </div>
     );
 };

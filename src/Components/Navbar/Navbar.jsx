@@ -23,14 +23,7 @@ const Navbar = () => {
         { id: 2, path: '/product', name: 'Product' },
         { id: 3, path: '/myCart', name: 'My-Cart' },
         { id: 4, path: '/addProduct', name: 'Add-Product' },
-
-
-
-
-
-
     ];
-
     // function for user img 
     let loginPhoto = () => {
         if (user.photoURL === null) {
@@ -48,21 +41,18 @@ const Navbar = () => {
             <div className='py-4 container mx-auto px-2'>
                 <div className='flex justify-between items-center'>
                     <div className="flex items-center gap-x-2">
-                        <img className="rounded-md w-16" src={logo} alt="" />
+                        <NavLink to='/'>
+                            <img className="rounded-md w-16" src={logo} alt="" />
+                        </NavLink>
                         <h1 className='block text-4xl text-blue-600 font-bold'>I-Dream</h1>
-
-
-
                     </div>
                     <div>
-
                         <ul className=' hidden md:flex'>
                             {
                                 routes.map(route => (
                                     <LinkBar key={route.id} route={route}></LinkBar>
                                 ))
                             }
-
                             <li className='ml-2 mt-10 md:mt-0 active border md:border-0  nav-bg profile-holder' >
                                 {
                                     user?.email || user?.displayName ?
@@ -81,8 +71,6 @@ const Navbar = () => {
                                     }
                                 </div>
                             </li>
-
-
                         </ul>
                         <div onClick={() => setOpen(!open)}>
                             {
@@ -92,12 +80,9 @@ const Navbar = () => {
                                     <span className="text-3xl font-bold bg-red-500 hover:bg-red-600 hover:text-4xl text-white px-2 rounded ">X</span>
                             }
                         </div>
-
-
                     </div>
                 </div>
                 <div className='md:hidden'>
-
                     <ul className={` fixed text-center space-y-5 text-black duration-1000 pr-2 top-20 mt-1 h-screen  w-3/4 opacity-95 bg-green-500  ${!open ? " left-0" : "left-[-800px] "}`}>
                         <li className='ml-2 mt-10 md:mt-0 active   nav-bg profile-holder' >
                             {
@@ -107,7 +92,6 @@ const Navbar = () => {
                                     < NavLink className="py-2  bg-blue-600  hover:text-pink-800  rounded-md" to="/registration">   <span className="block py-2">LogIn</span> </NavLink >
                             }
                             <div className='nav-item my-4 lg:my-0 proflie-item'>
-
                                 {user?.email || user?.displayName ?
                                     <div className={profileState === 'Off' ? "active-profile-icon-area" : 'profile-icon-area'}>
                                         <ProfileShortcut loginPhoto={loginPhoto}></ProfileShortcut>
@@ -123,7 +107,6 @@ const Navbar = () => {
                             ))
                         }
                     </ul>
-
                 </div>
             </div>
         </div >
