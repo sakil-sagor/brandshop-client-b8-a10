@@ -7,24 +7,24 @@
  
  ## Deliver QUALITY Products & facility within 5 CORE standards
 
-> We provide a smooth user experience with our dynamic online shop.
+- We provide a smooth user experience with our dynamic online shop.
 
-> User can login with his/her google account or a custom email pass 
+- User can login with his/her google account or a custom email pass 
 
-> User can add to cart his/her selected products
+- User can add to cart his/her selected products
 
-> User can remove cart form My-Cart page.
+- User can remove cart form My-Cart page.
 
-> User can make a contact with our support 
+- User can make a contact with our support 
 
-> We provie top brands of world with great discount
+- We provie top brands of world with great discount
 
-> Adhering to high ethical and moral standards at all times.
+- Adhering to high ethical and moral standards at all times.
  
-> Making service quality top priority in all we do. 
+- Making service quality top priority in all we do. 
  
-> Providing quality product care service in all processes
+- Providing quality product care service in all processes
  
-> Delivering customer satisfaction through quality service
+- Delivering customer satisfaction through quality service
 
 
